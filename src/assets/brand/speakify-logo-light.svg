@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 64" role="img" aria-label="Speakify">
+  <defs>
+    <linearGradient id="spk-g" x1="8" y1="6" x2="58" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6A4BFF"/><stop offset="1" stop-color="#A45CFF"/>
+    </linearGradient>
+  </defs>
+  <path d="M22 8h22a16 16 0 0 1 16 16v8a16 16 0 0 1-16 16H27l-11 9.5a1.6 1.6 0 0 1-2.6-1.3V47.2A16 16 0 0 1 6 32v-8A16 16 0 0 1 22 8z" fill="url(#spk-g)"/>
+  <g fill="#fff"><rect x="19" y="23" width="5" height="10" rx="2.5"/><rect x="27" y="17" width="5" height="22" rx="2.5"/><rect x="35" y="21" width="5" height="14" rx="2.5"/><rect x="43" y="25" width="5" height="6" rx="2.5"/></g>
+  <path d="M54 2c1 5 3 7 8 8-5 1-7 3-8 8-1-5-3-7-8-8 5-1 7-3 8-8z" fill="#FFB020" stroke="#fff" stroke-width="2.5" stroke-linejoin="round" paint-order="stroke"/>
+
+  <text x="74" y="43" font-family="Fredoka, 'Baloo 2', Nunito, 'Arial Rounded MT Bold', sans-serif" font-size="33" font-weight="700" letter-spacing="-0.5" fill="#1C1633">Speak<tspan fill="#6A4BFF">ify</tspan></text>
+</svg>
