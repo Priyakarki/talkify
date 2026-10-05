@@ -1,12 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Mic } from "lucide-react";
+import { LayoutDashboard, Menu, Mic } from "lucide-react";
 import Button from "../ui/Button";
 import { LogoMark } from "../ui/Logo";
 import useAuth from "../../hooks/useAuth";
 import { initials } from "../../utils/format";
 
 function getSection(pathname) {
-  if (pathname.startsWith("/dashboard")) return "Home";
+  if (pathname.startsWith("/dashboard")) return "Dashboard";
   if (/^\/stories\/[^/]+\/speak/.test(pathname)) return "Speaking";
   if (pathname.startsWith("/results")) return "Your results";
   if (pathname.startsWith("/practice-words")) return "Practice words";
@@ -36,6 +36,11 @@ export default function Topbar({ onMenuClick }) {
       </div>
 
       <div className="topbar__right">
+        {!pathname.startsWith("/dashboard") && (
+          <Link to="/dashboard" className="icon-btn" aria-label="Go to Dashboard" title="Dashboard">
+            <LayoutDashboard size={20} aria-hidden="true" />
+          </Link>
+        )}
         {!pathname.startsWith("/stories") && !pathname.startsWith("/speaking") && (
           <Button to="/stories" size="sm" icon={Mic} className="topbar__browse">
             Start speaking

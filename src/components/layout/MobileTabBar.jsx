@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import { House, Library, Mic, TrendingUp, UserRound } from "lucide-react";
+import { LayoutDashboard, Library, Mic, TrendingUp, UserRound } from "lucide-react";
 
 const TABS = [
-  { to: "/dashboard", label: "Home", icon: House },
+  { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { to: "/stories", label: "Stories", icon: Library },
   { to: "/speaking", label: "Speak", icon: Mic, primary: true },
   { to: "/progress", label: "Progress", icon: TrendingUp },

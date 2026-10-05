@@ -1,12 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
-import { House, Library, LogOut, Mic, SquarePen, Target, TrendingUp, UserRound, X } from "lucide-react";
+import { LayoutDashboard, Library, LogOut, Mic, SquarePen, Target, TrendingUp, UserRound, X } from "lucide-react";
 import Logo from "../ui/Logo";
 import Mascot from "../illustrations/Mascot";
 import useAuth from "../../hooks/useAuth";
 import { initials } from "../../utils/format";
 
 export const LEARN_LINKS = [
-  { to: "/dashboard", label: "Home", icon: House },
+  { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { to: "/stories", label: "Stories", icon: Library },
   { to: "/speaking", label: "Speaking practice", icon: Mic },
   { to: "/practice-words", label: "Practice words", icon: Target },
