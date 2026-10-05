@@ -5,7 +5,7 @@ export const AUTH_EXPIRED_EVENT = "bolobuddy:auth-expired";
 
 // "/api" goes through the Vite dev proxy to http://localhost:3000/api
 const axiosClient = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "/api",
+ baseURL: import.meta.env.VITE_BACKEND_URL + "/api",
   headers: { "Content-Type": "application/json" },
   timeout: 15000,
 });
